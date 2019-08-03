@@ -1,0 +1,44 @@
+@import 'vars'
+*
+    box-sizing: border-box
+    outline: 0
+
+body
+    overflow-x: hidden
+    font-size: 16px 
+    +montserrat
+
+.img-block
+    display: block
+    width: 100%    
+
+h1, h2, h3, h4, h5, h6
+    margin: 0
+    padding: 0
+
+a 
+    text-decoration: none    
+
+.button 
+    border: 2px solid transparent
+    padding: 23px 46px
+    background-color: $accent-color
+    transition: all .2s ease
+    &:hover 
+        cursor: pointer
+        background-color: transparent 
+        border: 2px solid $accent-color
+        color: #ffffff
+
+.section-title 
+    font-size: 30px
+    +montserrat
+    color: #1d1d1d 
+    letter-spacing: 1.3px
+    padding-bottom: 40px    
+    text-align: center  
+.description
+    +nunnito
+    font-size: 16px
+    color: #787878
+    line-height: 24px 

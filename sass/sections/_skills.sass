@@ -1,0 +1,48 @@
+.skills__block
+    display: flex
+    width: 100%
+    //background-color: #f8f9f9
+    &-text 
+        display: flex
+        flex-direction: column
+        &-wrapper 
+            &-progress
+                display: flex
+                flex-direction: column
+                .progress-title
+                    text-transform: uppercase
+                    font-size: 12px
+                    +montserrat
+                    font-weight: bold
+                    letter-spacing: 1.4px
+                    color: #000000
+                    padding-bottom: 15px
+                .progress-bar
+                    padding-bottom: 20px
+                    progress
+                       background-color: #d8d8d8
+                       height: 3px
+                       width: 80%
+                       background-color: $accent-color   
+                    progress::-webkit-progress-bar
+                       background-color: #d8d8d8   
+                    progress::-webkit-progress-value
+                       background-color: $accent-color
+                        
+@media(max-width: 1200px)
+    .skills__block
+        &-img
+            img 
+                margin-top: 10%
+
+@media(max-width: 992px)
+    .skills__block
+        &-img
+            img 
+                margin-top: 20%    
+
+@media(max-width: 865px)
+    .skills__block
+        &-text 
+            min-width: 100%             
+    

@@ -1,0 +1,53 @@
+.footer
+    background-color: #000000
+    color: #bcbcbc
+    &__block
+        display: flex
+        justify-content: space-between
+        &-copy
+            .title
+                color: #ffffff
+                font-size: 18px
+                padding-bottom: 15px
+            .copyriting
+                +nunnito
+                font-size: 15px
+                width: 70%
+                line-height: 20px
+        &-info 
+            display: flex
+            flex-direction: column
+            padding-right: 10%
+            span 
+                font-size: 15px
+                padding-bottom: 5px        
+        &-menu, &-social
+            display: flex
+            ul 
+                margin: 0
+                padding: 0
+                padding-right: 20px
+                li 
+                    list-style-type: none
+                    padding-bottom: 7px
+                    a 
+                        color: #bcbcbc
+                        font-size: 15px
+                        &:hover 
+                            text-decoration: underline
+
+@media(max-width: 770px)
+    .footer
+        &__block 
+            flex-direction: column
+            text-align: center
+            &-copy
+                padding-bottom: 30px
+                .copyriting
+                    width: 100%
+            &-info
+                padding: 0
+                padding-bottom: 30px
+            &-menu, &-social
+                justify-content: center
+                padding-bottom: 30px

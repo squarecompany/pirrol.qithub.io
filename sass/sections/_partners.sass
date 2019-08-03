@@ -1,0 +1,21 @@
+.partner__block
+    &-wrapper 
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        &-item
+            display: flex
+            justify-content: center
+            padding-bottom: 50px
+
+@media(max-width: 788px)
+    .partner__block
+        &-wrapper 
+            &-item 
+                min-width: 50%  
+
+@media(max-width: 400px)
+    .partner__block
+        &-wrapper 
+            &-item 
+                min-width: 100%  

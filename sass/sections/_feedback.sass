@@ -1,0 +1,51 @@
+.feedback__block
+    .description
+        display: block
+        text-align: center
+        width: 50%
+        margin: 0 auto
+        padding-bottom: 50px
+    &-wrapper 
+        &-form 
+            width: 60% 
+            margin: 0 auto 
+            form 
+                display: flex
+                flex-direction: column
+                .row-input
+                    display: flex
+                    justify-content: space-between
+                input, textarea
+                    height: 40px
+                    background-color: #ffffff
+                    border: none
+                    padding: 0 30px
+                    +nunnito
+                    font-size: 14px
+                    margin-bottom: 20px
+                textarea
+                    padding: 20px 30px
+                    min-height: 170px
+                input#name, input#email
+                    width: 48%
+                .button-group 
+                    text-align: center
+                    .button 
+                        color: #ffffff
+                        padding: 15px 35px
+                        &:hover 
+                            color: $text-color
+
+@media(max-width: 600px)
+    .feedback__block
+        .description
+            width: 100%
+        &-wrapper 
+            &-form
+                width: 100%
+                form 
+                    .row-input 
+                        flex-direction: column
+                        input#name, input#email
+                            width: 100%           
+
